@@ -1,0 +1,171 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+html{
+  scroll-behavior: smooth;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+   overflow-y: scroll; 
+}
+
+
+.parallax { 
+    background-image: url("img_parallax.jpg"); 
+    min-height: 500px;  
+    background-attachment: fixed; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    min-width: 100%; 
+   
+} 
+
+img{
+
+	height:500px;
+	width: 100%;
+
+}
+
+.fa-2x{
+	color: #FF00FF;
+	font-size: 50px;
+}
+
+.counter{
+	font-size: 30px;
+	color: #660066;
+}
+
+.skill-name{
+	font-size: 10px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 20px 0;
+
+}
+
+.skill-bar{
+	height: 20px;
+	background:#cacaca;
+	border-radius:8px; 
+}
+
+.skill-per{
+	height: 20px;
+	background-color: #0fbcf9;
+	border-radius: 8px;
+	width:0%;
+	transition: 1s linear;
+	position: relative;
+}
+
+.skill-per::before{
+	content: attr(per);
+	position: absolute;
+	padding: 4px 6px;
+	background-color: #000;
+	color: #fff;
+	font-size: 12px;
+	border-radius: 4px;
+	top: -35px;
+	right: 0;
+	transform: translateX(50%);
+}
+
+
+.skill-per::after{
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: #000;
+	top:-16px;
+	right: 0;
+	transform: translateX(50%) rotate(45deg);
+	border-radius: 2px;
+
+}
+
+.navigation{
+	padding: 25px 0px;
+}
+
+.navigation a{
+	margin-right: 5px;
+	text-decoration: none;
+	border: 1px solid #ccc;
+	padding: 10px 25px;
+	border-radius :50px; 
+	color: red;
+
+}
+
+.navigation a.active{
+	background-color: #e74c3c;
+	border-color: #e74c3c;
+	color: #fff;
+}
+
+.filter img{
+	margin: 5px;
+	width: 400px;
+	height: 250px;
+	margin-top: 20px;
+
+}
+
+.heading{
+	text-align: center;
+	font-size: 35px;
+	border-bottom: 2px dotted #fff;
+}
+
+.btn-info{
+	width: 50%;
+	letter-spacing: 2px;
+	background:transparent;
+	transform: all 0.5s ease-in-out
+}
+
+.btn-info:hover{
+	transform: scale(1.05);
+}
+
+.icn{
+	font-family: monospace;
+	font-size:17px;
+	color: white;
+}
+
+hr{
+	width: 80%;
+	color: white;
+}
+
+ul li a{
+	color: #fff;
+	float: left;
+	font-size: 22px;
+	margin-right: 22px;
+	margin-left: 25px;
+	transition: 0.5s ease-in-out;
+}
+
+.resume-item li {
+	margin-left: 30px;
+}
+
+html {
+  overflow:   scroll;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
